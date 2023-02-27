@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "com.isoguzay.datastoresample";
+option java_multiple_files = true;
+
+message LocalConfig{
+
+  message ConfigurationItemEntity {
+    string code = 1;
+    string displayName = 2;
+  }
+
+  repeated ConfigurationItemEntity countries = 1;
+  repeated ConfigurationItemEntity languages = 2;
+  repeated ConfigurationItemEntity genders = 3;
+
+}
